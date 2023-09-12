@@ -1,5 +1,5 @@
 const React = require('react')
-class Index extends React.Component {
+class Show extends React.Component {
     render() {
         const myStyle = {
             color: '#ffffff',
@@ -9,7 +9,7 @@ class Index extends React.Component {
         return (
             <div>
                 <h1 style={myStyle}>Gotta Catch 'Em All!</h1>
-                <h2>{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</h2>
+                <h2>{pokemon.name}</h2>
                 <img src={pokemon.img + ".jpg"} />
                 <a href="/pokemon">Go back to main</a>
 
@@ -19,4 +19,4 @@ class Index extends React.Component {
 }
 
 
-module.exports = Index;
+module.exports = Show;
